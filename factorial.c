@@ -10,9 +10,9 @@ int main(int argc, char const *argv[])
 }
 
 int factorial(int number) {
-	if(number <= 2) {
-		return number;
-	} else {
-		return number*factorial(number-1);
+	int result = 1;
+	for(int i = number; i > 0 ; i--) {
+		result *= i;
 	}
+	return result;
 }
